@@ -1,0 +1,94 @@
+html{
+	font-family:Arial;
+	background-color: lightblue;
+}
+
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size:20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+	left:0;
+}
+
+#home {
+	top:20px;
+	background-color: black;
+}
+
+#uebermich {
+	top:80px;
+	background-color:black;
+}
+
+#angebote {
+	top:140px;
+	background-color: black;
+}
+
+#preise {
+	top: 200px;
+	background-color:black;
+}
+
+#kontakt {
+	top:260px;
+	background-color:black;
+}
+
+#Preisliste{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2.5em;
+	border-bottom: solid 1px grey;
+	float:left;
+	height:auto;
+	width:75%;
+}
+
+ figure {
+	color: white;
+	background: black;
+	font-size: 1.5em;
+	box-shadow: 0.1em 0.1em 0.1em 0 hsl(0, 0%, 50%);
+	padding: 0.1em 0.1em 0.1em 1em;
+	width: 12em;
+	margin-left:-1.4em;
+	margin-top:0;
+ }
+ 
+table{
+	float:left;
+	width:100%;
+	padding-left:2em;
+	border-color: white;
+	border-bottom: 1px solid white;
+	background: white;
+}
+
+th {
+	text-align: left;
+	padding-left:2em;
+	border-bottom: 1px solid white;
+}
+ tr {
+	padding-top:20px;
+	padding-bottom:20px;
+	height: 40px;
+	padding-left:-2em;
+ }
+ 
+ td {
+	padding-left:2em;
+}

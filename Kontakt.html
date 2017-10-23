@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="logo.jpg" />
+<title>Kontakt</title>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="KontakStyle.css"> 
+</head>
+<body>
+ <div id="logo_kasten">
+	 <a href="Home.html"><img src="logo.jpg" id="Logo"></a>
+ </div>
+
+<div id="mySidenav" class="sidenav">
+
+<a href="Home.html" id ="home">Home</a></li>
+  <a href="uebermich.html" id ="about">Über mich</a>
+
+  <a style="cursor: pointer;" onclick="openSide()" id="drp">Infos --></a>
+    <a style="cursor: pointer;" onclick="closeSide()" id="close">Infos <--</a> 
+  <div id="info" class="dropdownnav">
+		<a href="javascript:void(0)" class="dropbtn" ></a>
+		<a href="Angebote.html" id="angebot">Angebote</a>
+		<a href="#" id="preis">Preise</a>	
+  </div>
+ 
+	<a href="Kontakt.html" id="contact">Kontakt</a>
+</div>
+
+<div id="haupt">
+
+<h1>Beispiel</h1><p>Geben Sie Ihre Daten an:</p>
+	<p><label>Vorname:</label> <input id="input" type="text" value=""></input></p>
+	<p></p><label>Nachname:</label> <input id="nachname" type="text" value=""></input></p>
+	
+	<p><label>Passwort:</label> <input type="password" id="passwd" value=""></input></p>
+	
+	<button id="button" type="submit" name="button" value="enter">Zusammenfassung</button>
+	<button id="button2" type="submit" name="button" value="enter">andersrum</button>
+
+	
+	<p><input type="checkbox" id="chkBox">AGB akzeptieren</input></p>
+	<p><input type="radio" id="rb">Radio-Button</input></p>
+	
+	<p><input type="image" src="logo2.jpg" value="Senden" id="image" onclick="alert('Gesendet')"></input></p>
+	
+</div>
+
+
+
+</body> 
+<script type="text/JavaScript" language="JavaScript">
+ 'use strict'; 
+ 
+ 	function openSide() {
+	
+	document.getElementById("angebot").style.left = "100px";
+	document.getElementById("angebot").style.visibility= "visible";
+	document.getElementById("preis").style.left = "225px";
+	document.getElementById("preis").style.visibility= "visible";
+	document.getElementById("close").style.visibility = "visible";
+	document.getElementById("close").style.left ="0";
+	document.getElementById("dpr").style.visibility = "hidden";
+	}
+	
+	function closeSide() {
+	document.getElementById("angebot").style.visibility = "hidden";
+	document.getElementById("preis").style.visibility = "hidden";
+	document.getElementById("close").style.visibility = "hidden";
+	document.getElementById("dpr").style.visibility = "visible";
+	}
+ 
+function myFunction() {
+    document.getElementById("info").classList.toggle("info2");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('info')) {
+
+    var dropdowns = document.getElementsById("info");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('info2')) {
+        openDropdown.classList.remove('info3');
+      }
+    }
+  }
+}
+
+document.getElementById("button").onclick=function ausgabe(){
+var input=document.getElementById("input");
+var nachname=document.getElementById("nachname").value;
+var password=document.getElementById("passwd").value;
+var eingabe= (document.getElementById('input').value == 'Elvira') ? 'Richtig' : 'Falsch';
+var antwort = eingabe;
+var ausgabe = document.getElementById("text");
+ausgabe.innerHTML = antwort;
+}
+//var zsfg="Vorname: "+input+ "<br>" + "Nachname: "+nachname + "<br>" + "Passwort: " + password;
+//document.getElementById("text").innerHTML=zsfg;
+
+
+document.getElementById("button2").onclick=function(){
+var test="";
+document.getElementById("input").value=test;
+document.getElementById("nachname").value=test;
+document.getElementById("passwd").value=test;
+}
+
+function fenster_oeffnen()
+{
+alert("Gesendet");
+}
+ </script>
+	  </html>

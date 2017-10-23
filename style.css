@@ -1,0 +1,156 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.dropdownnav {
+    width: 0;
+    position: fixed;
+	background-color:black;
+    left: 0;
+	z-index: 1;
+    overflow-x: hidden;
+ 
+}
+
+.dropdownnav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdownnav a:hover{
+    color: #f1f1f1;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    background: black;
+    text-align: left;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+	font: inherit;
+	z-index: auto;
+	display: block;
+	width: 6.4em;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+#contact {
+position: absolute;
+top: 195px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+#text {
+	padding: 16px;
+}
+#ft {
+	transition: margin-left .5s;
+	padding:16px;
+}
+
+span{
+	background: black;
+	color: white;
+	width:100%;
+}
+
+#SideBar_DropDown {
+	background: black;
+	color:white;
+}
+
+#ulllist{
+	background:black;
+	color: white;
+	font-family: Arial;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+	position: alsolute;
+}
+
+img{
+	width:100%;
+	height: fixed;
+	float:left;
+	display: block;
+}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden;}
+div#slider figure img { width: 20%; float: left;}
+div#slider figure {
+  position: relative;
+  height: 70%;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
